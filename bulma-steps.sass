@@ -152,10 +152,10 @@ $steps-thin-marker-size: .8em !default
     .steps-content
       margin-left: calc($size * $steps-marker-size / 2)
       &:not(:last-child)
-        margin-right: calc(-$size * $steps-marker-size / 2)
+        margin-right: calc($size * -1 * $steps-marker-size / 2)
 
       &.is-divider-content
-        margin-right: calc(-$size * $steps-marker-size / 2)
+        margin-right: calc($size * -1 $steps-marker-size / 2)
         padding-left: 2em
         padding-right: 2em
 
